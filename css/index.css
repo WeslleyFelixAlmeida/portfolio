@@ -52,27 +52,29 @@ header > nav > ul {
   list-style: none;
 }
 
-header > nav > ul > li {
+.navLinks {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30px;
-  padding: 0px 10px;
   box-sizing: border-box;
 }
 
-header > nav > ul > li:hover {
-  border-bottom: solid 1px #43476b;
-}
-
-header > nav > ul > li > a,
-header > nav > ul > li > a:visited {
+.navLinks > a,
+.navLinks > a:visited {
   color: #43476b;
   text-decoration: none;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px 10px;
+  width: 85px;
+  text-wrap: nowrap;
+}
+
+.navLinks:hover {
+  background-color: #f1f1f1;
 }
 
 .link_selecionado {
@@ -169,7 +171,6 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  /* height: 150vh; */
   opacity: 0%;
   transition: opacity var(--animacao_tempo) ease;
   padding-top: 50px;
@@ -184,7 +185,6 @@ main {
   flex-direction: column;
   width: 100%;
   row-gap: 20px;
-  /* margin-bottom: 20px; */
 }
 
 .projetos-principais-item {
@@ -358,10 +358,6 @@ main {
   width: 30px;
 }
 
-/* .projetos-principais-githublink > button:hover {
-  background-color: #929dff;
-} */
-
 .github-link-img {
   position: absolute;
   opacity: 10%;
@@ -446,6 +442,10 @@ main {
   position: relative;
 }
 
+.container-formacao ul {
+  list-style: none;
+}
+
 .container-formacao > img {
   position: absolute;
   top: 50%;
@@ -476,12 +476,14 @@ footer {
 @media screen and (max-width: 1115px) {
   .sobremim_container {
     flex-direction: column;
-    min-height: 1000px;
+    height: 85vh;
+  }
+
+  header > nav {
+    width: 100%;
   }
 
   header > nav > ul {
-    columns: 4;
-    list-style: none;
     font-size: 0.875rem; /* 14px */
   }
 
@@ -491,8 +493,8 @@ footer {
     height: auto;
   }
 
-  header > nav {
-    width: 100%;
+  .navLinks > a:hover {
+    background-color: white;
   }
 
   main h1 {
@@ -504,8 +506,8 @@ footer {
     width: 40px;
   }
 
-  header > nav > ul > li:hover {
-    border-bottom: none;
+  .navLinks > a {
+    width: 70px;
   }
 }
 
@@ -537,14 +539,14 @@ footer {
     width: 90px;
   }
 
-  header > nav > ul > li {
-    padding: 0px;
-  }
-
   header > nav > ul {
     columns: 4;
     list-style: none;
     font-size: 0.8125rem; /* 13px */
+  }
+
+  .navLinks > a {
+    padding: 0px;
   }
 
   .containerImagem > p {
@@ -557,5 +559,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .container-projetos {
+    padding: 0px;
+  }
+
+  .container-contatos {
+    height: 60vh;
+  }
+
+  .container-formacao {
+    padding-top: 0px;
   }
 }
