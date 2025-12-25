@@ -71,6 +71,7 @@ header > nav > ul {
   padding: 0px 10px;
   width: 85px;
   text-wrap: nowrap;
+  transition: background-color 0.5s ease;
 }
 
 .navLinks:hover {
@@ -476,7 +477,7 @@ footer {
 @media screen and (max-width: 1115px) {
   .sobremim_container {
     flex-direction: column;
-    height: 85vh;
+    padding-top: 100px;
   }
 
   header > nav {
@@ -562,14 +563,15 @@ footer {
   }
 
   .container-projetos {
-    padding: 0px;
+    padding-top: 80px;
   }
 
   .container-contatos {
     height: 60vh;
+    padding-top: 80px;
   }
 
   .container-formacao {
-    padding-top: 0px;
+    padding-top: 80px;
   }
 }
