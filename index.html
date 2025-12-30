@@ -37,8 +37,15 @@
         </nav>
     </header>
     <main>
-        <button onclick="trocarCor()" id="botaoMudarCor">Trocar cor</button>
-        
+
+        <div class="container-mudar-cor">
+            <p>Alterar tema</p>
+            <div id="botaoMudarCor">
+                <input type="checkbox" name="alterarTema" id="alterarTema" onclick="trocarCor()">
+                <label for="alterarTema" id="labelBotaoDarkMode"></label>
+            </div>
+        </div>
+
         <section class="sobremim_container breakpoints" id="titulo_principal">
 
             <img src="imagens/profile_image-Photoroom.png" alt="imagem autor" id="imagem_autor">

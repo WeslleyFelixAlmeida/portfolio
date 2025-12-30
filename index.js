@@ -78,14 +78,24 @@ const imagem_email = document.querySelector("#email_icone");
 const imagem_email_branco = "imagens/email_branco.png";
 const imagem_email_preto = "imagens/email_icon.png";
 
+let darkTheme = false;
+
 const trocarCor = () => {
     const body = document.querySelector(".body");
-    body.classList.add("dark_theme");
 
-    gitImagens.forEach((img) => {
-        img.src = githubLogoBranco;
-    })
+    if (!darkTheme) {
+        body.classList.add("dark_theme");
 
-    imagem_formacao.src = imagem_form_branco_url;
-    imagem_email.src = imagem_email_branco;
+        gitImagens.forEach((img) => {
+            img.src = githubLogoBranco;
+        })
+
+        imagem_formacao.src = imagem_form_branco_url;
+        imagem_email.src = imagem_email_branco;
+        darkTheme = true;
+        return null;
+    }
+
+    body.classList.remove("dark_theme");
+    darkTheme = false;
 }
