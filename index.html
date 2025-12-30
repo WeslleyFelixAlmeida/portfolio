@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class="body">
     <header>
         <nav>
             <ul>
@@ -37,7 +37,10 @@
         </nav>
     </header>
     <main>
+        <button onclick="trocarCor()" id="botaoMudarCor">Trocar cor</button>
+        
         <section class="sobremim_container breakpoints" id="titulo_principal">
+
             <img src="imagens/profile_image-Photoroom.png" alt="imagem autor" id="imagem_autor">
             <div class="texto_sobremim">
                 <h1>Weslley Felix de Almeida</h1>
@@ -120,7 +123,7 @@
                         </p>
                         <button onclick="navegar('tasklist')">
                             <div class="containerImagemGit">
-                                <img src="imagens/github_icon.png" alt="github_icone">
+                                <img src="imagens/github_icon.png" alt="github_icone" class="githubImagens">
                             </div>
                             Repositório
                             GitHub ->
@@ -172,7 +175,7 @@
                         </p>
                         <button onclick="navegar('stockhub')">
                             <div class="containerImagemGit">
-                                <img src="imagens/github_icon.png" alt="github_icone">
+                                <img src="imagens/github_icon.png" alt="github_icone" class="githubImagens">
                             </div>
                             Repositório
                             GitHub ->
@@ -222,7 +225,7 @@
                         </p>
                         <button onclick="navegar('schedule')">
                             <div class="containerImagemGit">
-                                <img src="imagens/github_icon.png" alt="github_icone">
+                                <img src="imagens/github_icon.png" alt="github_icone" class="githubImagens">
                             </div>
                             Repositório
                             GitHub ->
@@ -270,12 +273,12 @@
                 <div class="projetos-principais-githublink">
                     <h2>Veja mais no meu repositório do GitHub.</h2>
                     <button onclick="navegar()" class="gitHubButton">
-                        <img src="imagens/github_icon.png" alt="github_icone">
+                        <img src="imagens/github_icon.png" alt="github_icone" class="githubImagens">
                         <p>
                             Repositório GitHub ->
                         </p>
                     </button>
-                    <img class="github-link-img" src="imagens/github_icon.png" alt="github_icone">
+                    <img class="github-link-img githubImagens" src="imagens/github_icon.png" alt="github_icone">
                 </div>
             </div>
         </section>
@@ -284,7 +287,7 @@
             <img src="imagens/outros/imagem_telefone.png" alt="background">
             <h2>Contatos:</h2>
             <div class="container-contato">
-                <img src="imagens/email_icon.png" alt="imagem links contatos" class="contatos-imgs">
+                <img src="imagens/email_icon.png" alt="imagem links contatos" class="contatos-imgs" id="email_icone">
                 <p>E-mail:</p>
                 <a href="mailto:weslleyfelixdealmeida@gmail.com" target="_blank"
                     id="email_link">weslleyfelixdealmeida@gmail.com ->
@@ -298,14 +301,14 @@
                 </a>
             </div>
             <div class="container-contato">
-                <img src="imagens/github_icon.png" alt="imagem links contatos" class="contatos-imgs">
+                <img src="imagens/github_icon.png" alt="imagem links contatos" class="contatos-imgs githubImagens">
                 <p>GitHub:</p>
                 <a href="https://github.com/WeslleyFelixAlmeida" target="_blank">github.com/WeslleyFelixAlmeida ->
                 </a>
             </div>
         </section>
         <section class="container-formacao breakpoints" id="formacao">
-            <img src="imagens/outros/formacao.png" alt="background">
+            <img src="imagens/outros/formacao.png" alt="background" id="imagem_formacao">
 
             <h2>Formação:</h2>
             <ul>

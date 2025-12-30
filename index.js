@@ -64,3 +64,28 @@ const navegar = (projeto) => {
 
     window.open(url, "_blank");
 }
+
+
+const gitImagens = document.querySelectorAll(".githubImagens");
+const githubLogoBranco = "imagens/github-white-icon.png";
+const githubLogoPreto = "imagens/github_icon.png";
+
+const imagem_formacao = document.querySelector("#imagem_formacao");
+const imagem_form_branco_url = "imagens/outros/formacao_fundo_branco.png";
+const imagem_form_preto_url = "imagens/outros/formacao.png";
+
+const imagem_email = document.querySelector("#email_icone");
+const imagem_email_branco = "imagens/email_branco.png";
+const imagem_email_preto = "imagens/email_icon.png";
+
+const trocarCor = () => {
+    const body = document.querySelector(".body");
+    body.classList.add("dark_theme");
+
+    gitImagens.forEach((img) => {
+        img.src = githubLogoBranco;
+    })
+
+    imagem_formacao.src = imagem_form_branco_url;
+    imagem_email.src = imagem_email_branco;
+}
