@@ -97,5 +97,12 @@ const trocarCor = () => {
     }
 
     body.classList.remove("dark_theme");
+
+    gitImagens.forEach((img) => {
+        img.src = githubLogoPreto;
+    })
+
+    imagem_formacao.src = imagem_form_preto_url;
+    imagem_email.src = imagem_email_preto;
     darkTheme = false;
 }
